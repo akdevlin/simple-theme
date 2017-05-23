@@ -105,11 +105,10 @@ add_action( 'widgets_init', 'simple_sample_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function simple_sample_theme_scripts() {
-        //add the master stylesheet
 	wp_enqueue_style( 'simple-sample-theme-style', get_stylesheet_uri() );
-        //add js for default nav setup
-	//wp_enqueue_script( 'simple-sample-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-        //add js for link accessability
+
+	wp_enqueue_script( 'simple-sample-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'simple-sample-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -142,13 +141,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - -   AD  - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/**
- * Load custom AD WP php functions
- */
-require get_template_directory() . '/ad-inc/ad-wp-debug.php';
-require get_template_directory() . '/ad-inc/ad-wp-utility.php';

@@ -1,0 +1,312 @@
+[
+    {
+        "key": "group_58a5ba35ccb21",
+        "title": "Header Nav Menu Fields",
+        "fields": [
+            {
+                "key": "field_58addc965fecf",
+                "label": "Main Navigation",
+                "name": "main_navigation",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_58addcf85fed1",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Menu Item",
+                "sub_fields": [
+                    {
+                        "key": "field_58addcf85fed1",
+                        "label": "Menu Item Label",
+                        "name": "menu_item_label",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58d2e1d432cd7",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "flexible_content",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "button_label": "Add Link",
+                        "min": "",
+                        "max": 1,
+                        "layouts": [
+                            {
+                                "key": "58d2e1e322d9b",
+                                "name": "existing_page",
+                                "label": "Existing Page",
+                                "display": "row",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_58d2e1fb32cd8",
+                                        "label": "The Page",
+                                        "name": "the_page",
+                                        "type": "page_link",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "post_type": [],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "allow_archives": 1,
+                                        "multiple": 0
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "58d2e22332cd9",
+                                "name": "other_url",
+                                "label": "Other URL",
+                                "display": "row",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_58d2e25632cda",
+                                        "label": "The URL",
+                                        "name": "the_url",
+                                        "type": "url",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58d2e3b7eb3a2",
+                        "label": "Has Icon",
+                        "name": "has_icon",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_58addcc95fed0",
+                        "label": "Has Drop Down",
+                        "name": "has_drop_down",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_58d2e3e7eb3a3",
+                        "label": "Icon",
+                        "name": "icon",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58d2e3b7eb3a2",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58adddb75fed3",
+                        "label": "Sub Menu",
+                        "name": "sub_menu",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58addcc95fed0",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_58d2e45dc64f2",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Sub Menu Item",
+                        "sub_fields": [
+                            {
+                                "key": "field_58d2e45dc64f2",
+                                "label": "Sub Link",
+                                "name": "sub_link",
+                                "type": "flexible_content",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "44",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "button_label": "Add Link",
+                                "min": "",
+                                "max": 1,
+                                "layouts": [
+                                    {
+                                        "key": "58d2e1e322d9b",
+                                        "name": "existing_page",
+                                        "label": "Existing Page",
+                                        "display": "row",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_58d2e45ec64f3",
+                                                "label": "The Page",
+                                                "name": "the_page",
+                                                "type": "page_link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "post_type": [],
+                                                "taxonomy": [],
+                                                "allow_null": 0,
+                                                "allow_archives": 1,
+                                                "multiple": 0
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    {
+                                        "key": "58d2e22332cd9",
+                                        "name": "other_url",
+                                        "label": "Other URL",
+                                        "display": "row",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_58d2e45ec64f4",
+                                                "label": "The URL",
+                                                "name": "the_url",
+                                                "type": "url",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "default_value": "",
+                                                "placeholder": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

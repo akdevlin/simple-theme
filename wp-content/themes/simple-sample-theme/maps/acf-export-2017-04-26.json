@@ -1,0 +1,633 @@
+[
+    {
+        "key": "group_58e7af99ed3ee",
+        "title": "Google Maps Fields",
+        "fields": [
+            {
+                "key": "field_58e7b01a9aeab",
+                "label": "Settings",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58e7afb69aeaa",
+                "label": "API Key",
+                "name": "api_key",
+                "type": "text",
+                "instructions": "https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "AIzaSyBsEaYbJim6smD5K_ZIzCvcmfNWyZuLCgk",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58e7b0436967a",
+                "label": "Maps",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58e7b04e6967b",
+                "label": "Map",
+                "name": "map",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_58e7b07e6967c",
+                "min": 0,
+                "max": 1,
+                "layout": "block",
+                "button_label": "Add Map",
+                "sub_fields": [
+                    {
+                        "key": "field_58e7b07e6967c",
+                        "label": "Map Title",
+                        "name": "map_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58e7b1e424823",
+                        "label": "Map Center",
+                        "name": "map_center",
+                        "type": "text",
+                        "instructions": "The latitude and longitude(i.e. 33.7593143,-84.39285) for the center of your map.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "33.8802102,-84.5117665",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58e7b1f424824",
+                        "label": "Map Zoom Level",
+                        "name": "map_zoom_level",
+                        "type": "number",
+                        "instructions": "The initial zoom level for your map (1-21).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_58e7b2fcb775b",
+                        "label": "Div ID",
+                        "name": "div_id",
+                        "type": "text",
+                        "instructions": "The unique ID for the HTML element that will contain the map",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "altaMap",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58e7b0976967d",
+                        "label": "Map Styles",
+                        "name": "map_styles",
+                        "type": "text",
+                        "instructions": "Copy and paste the JSON styles for your map here. \r\nhttps:\/\/mapstyle.withgoogle.com\/",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "[   {     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#f5f5f5\"       }     ]   },   {     \"elementType\": \"labels.icon\",     \"stylers\": [       {         \"visibility\": \"off\"       }     ]   },   {     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#616161\"       }     ]   },   {     \"elementType\": \"labels.text.stroke\",     \"stylers\": [       {         \"color\": \"#f5f5f5\"       }     ]   },   {     \"featureType\": \"administrative.land_parcel\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#bdbdbd\"       }     ]   },   {     \"featureType\": \"poi\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#eeeeee\"       }     ]   },   {     \"featureType\": \"poi\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#757575\"       }     ]   },   {     \"featureType\": \"poi.park\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#e5e5e5\"       }     ]   },   {     \"featureType\": \"poi.park\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#9e9e9e\"       }     ]   },   {     \"featureType\": \"road\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#ffffff\"       }     ]   },   {     \"featureType\": \"road.arterial\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#757575\"       }     ]   },   {     \"featureType\": \"road.highway\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#dadada\"       }     ]   },   {     \"featureType\": \"road.highway\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#616161\"       }     ]   },   {     \"featureType\": \"road.local\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#9e9e9e\"       }     ]   },   {     \"featureType\": \"transit.line\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#e5e5e5\"       }     ]   },   {     \"featureType\": \"transit.station\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#eeeeee\"       }     ]   },   {     \"featureType\": \"water\",     \"elementType\": \"geometry\",     \"stylers\": [       {         \"color\": \"#c9c9c9\"       }     ]   },   {     \"featureType\": \"water\",     \"elementType\": \"labels.text.fill\",     \"stylers\": [       {         \"color\": \"#9e9e9e\"       }     ]   } ]",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58fe44f5ed195",
+                        "label": "Map Type",
+                        "name": "map_type",
+                        "type": "radio",
+                        "instructions": "Choose what type of map you would like to display.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "ROADMAP": "Road Map",
+                            "SATELLITE": "Satellite",
+                            "TERRAIN": "Terrain",
+                            "HYBRID": "Hybrid"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_58fe45f6ed196",
+                        "label": "Map Max Zoom",
+                        "name": "map_max_zoom",
+                        "type": "number",
+                        "instructions": "The maximum level that this map can be zoomed to (1-21).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 15,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 0,
+                        "max": 21,
+                        "step": 1
+                    },
+                    {
+                        "key": "field_58fe4631ed197",
+                        "label": "Map Min Zoom",
+                        "name": "map_min_zoom",
+                        "type": "number",
+                        "instructions": "The minimum level that this map can be zoomed to (1-21).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 8,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 1,
+                        "max": 21,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_58fe467ff3990",
+                        "label": "Map UI",
+                        "name": "map_ui",
+                        "type": "true_false",
+                        "instructions": "Choose whether or not to display the default Google Maps UI on your map.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 1,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_58fe46c4f3991",
+                        "label": "Map Background Color",
+                        "name": "map_background_color",
+                        "type": "color_picker",
+                        "instructions": "This color will show up as the background color for tiles while the map is loading.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#FFdead"
+                    },
+                    {
+                        "key": "field_58fe4fc42595b",
+                        "label": "Enable Scroll Wheel",
+                        "name": "scroll_wheel",
+                        "type": "true_false",
+                        "instructions": "Allow the user to zoom in and out of the map with the scroll wheel.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_58fe5c5995995",
+                        "label": "Draggable",
+                        "name": "draggable",
+                        "type": "true_false",
+                        "instructions": "Allow the user to move around the map by clicking and dragging the mouse.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 1,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_58e7b145ac116",
+                "label": "Location Groups",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58e7b154ac117",
+                "label": "Location Group",
+                "name": "location_group",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_58e7b165ac118",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Location Group",
+                "sub_fields": [
+                    {
+                        "key": "field_58e7b165ac118",
+                        "label": "Group Name",
+                        "name": "group_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58eb8443eb040",
+                        "label": "Group Icon",
+                        "name": "group_icon",
+                        "type": "image",
+                        "instructions": "This  image will be displayed as a clickable tab to show\/hide all of the locations in this group.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58fa3f17a1253",
+                        "label": "Pin Type",
+                        "name": "pin_type",
+                        "type": "flexible_content",
+                        "instructions": "This is the icon that will be displayed on the map for each location in this group.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "button_label": "Add Pin Icon",
+                        "min": "",
+                        "max": 1,
+                        "layouts": [
+                            {
+                                "key": "58fa3f340eb9a",
+                                "name": "basic_pin",
+                                "label": "Basic Pin",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_58e7c83e35777",
+                                        "label": "Pin Color",
+                                        "name": "pin_color",
+                                        "type": "color_picker",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "4d86a0"
+                                    },
+                                    {
+                                        "key": "field_58fa3fa8a1255",
+                                        "label": "Icon Url",
+                                        "name": "icon_url",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "https:\/\/chart.apis.google.com\/chart?chst=d_map_pin_letter&chld=%E2%80%A2|",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "58fa4001a1256",
+                                "name": "custom_icon",
+                                "label": "Custom Icon",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_58fa4028a1257",
+                                        "label": "The Icon",
+                                        "name": "the_icon",
+                                        "type": "image",
+                                        "instructions": "Upload your own image to display as a pin on the map.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "url",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58fe4afc0be21",
+                        "label": "Static Locations",
+                        "name": "static_locations",
+                        "type": "true_false",
+                        "instructions": "If this group is static all of the locations will be displayed on the map no matter what.  If this group is dynamic the locations will only show up when activated.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Static",
+                        "ui_off_text": "Dynamic"
+                    },
+                    {
+                        "key": "field_58fe4bf90be22",
+                        "label": "Animation",
+                        "name": "animation",
+                        "type": "radio",
+                        "instructions": "Select the type of animation that will be applied to every pin in this group.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "DROP": "Drop",
+                            "BOUNCE": "Bounce",
+                            "none": "No Animation"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_58e7b17cac119",
+                        "label": "Map Location",
+                        "name": "map_location",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_58e7b1a4ac11a",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Location",
+                        "sub_fields": [
+                            {
+                                "key": "field_58e7b1a4ac11a",
+                                "label": "Location Name",
+                                "name": "location_name",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_58e7b1b9ac11b",
+                                "label": "Location Latitude & Longitude",
+                                "name": "location_lat_long",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_58e7b57145a7c",
+                                "label": "Location Address",
+                                "name": "location_address",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "50",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-map"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

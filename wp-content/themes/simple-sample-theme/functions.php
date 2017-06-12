@@ -111,7 +111,9 @@ function simple_sample_theme_scripts() {
 	//wp_enqueue_script( 'simple-sample-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
         //add js for link accessability
 	wp_enqueue_script( 'simple-sample-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+        //tweenMax animation library
+        wp_enqueue_script('tweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js');
+        //comment conditional
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
